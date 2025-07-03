@@ -1,0 +1,16 @@
+.footer {
+  background-color: #1f1f1f;
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  margin-top: auto; /* esto empuja el footer hacia abajo */
+}
+
+.github-link {
+  display: inline-block;
+}
+
+.github-image {
+  height: 59px;
+  width: auto;
+}
