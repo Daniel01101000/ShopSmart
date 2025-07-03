@@ -10,21 +10,21 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://shopsmart-hkhu.onrender.com/api/products') // ✅ URL pública de tu backend
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err));
   }, []);
 
   return (
-    <Router>
+    <Router basename="/ShopSmart">
       <div className="app-wrapper">
         <Header />
         <Routes>
-          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products" element={<ProductsPage products={products} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="*" element={<ProductsPage />} />
+          <Route path="*" element={<ProductsPage products={products} />} />
         </Routes>
       </div>
     </Router>

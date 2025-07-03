@@ -7,10 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node modules
 node_modules
+
+# Build output folders
 dist
 dist-ssr
+
+# Local environment files
 *.local
+
+# Backend folder (para evitar subir backend en el repo frontend)
+backend
 
 # Editor directories and files
 .vscode/*
