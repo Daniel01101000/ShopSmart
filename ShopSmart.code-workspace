@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "ShopSmart",
+			"path": "../../../../../../ShopSmart"
+		},
+		{
+			"name": "frontend",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
