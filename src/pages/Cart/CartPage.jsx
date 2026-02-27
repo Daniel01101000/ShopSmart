@@ -1,7 +1,7 @@
 import "./CartPage.css";
 
 function CartPage({ cart, removeFromCart }) {
-  const total = cart.reduce((acc, item) => acc + Number(item.precio), 0);
+  const total = cart.reduce((acc, item) => acc + Number(item.price), 0);
 
   return (
     <div className="cart-wrapper">
@@ -14,11 +14,11 @@ function CartPage({ cart, removeFromCart }) {
           <>
             {cart.map((p) => (
               <div key={p.id} className="cart-item">
-                <img src={p.imagen_url} alt={p.nombre} />
+                <img src={p.image_url} alt={p.name} />
 
                 <div style={{ flexGrow: 1 }}>
-                  <h3>{p.nombre}</h3>
-                  <p>${p.precio}</p>
+                  <h3>{p.name}</h3>
+                  <p>${p.price}</p>
                 </div>
 
                 <button
