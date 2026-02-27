@@ -87,14 +87,25 @@ function App() {
       <div className="app-wrapper">
         <Header user={user} setUser={setUser} />
 
-        {/* 🔥 Mensajes profesionales */}
         {loadingProducts && !wakingUp && (
-          <p style={{ textAlign: "center" }}>Loading products...</p>
+          <p style={{
+               display: "flex",
+               justifyContent: "center",
+               alignItems: "center",
+               height: "200px",  
+               fontSize: "1.8rem"
+            }}>Backend is waking up (free hosting). This may take up to 45 seconds...</p>
         )}
 
         {wakingUp && (
-          <p style={{ textAlign: "center" }}>
-            Backend is waking up (free hosting). This may take up to 60 seconds...
+          <p style={{
+               display: "flex",
+               justifyContent: "center",
+               alignItems: "center",
+               height: "200px",  
+               fontSize: "1.8rem"
+            }}>
+            Backend is waking up (free hosting). This may take up to 45 seconds...
           </p>
         )}
 
